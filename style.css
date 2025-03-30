@@ -1,7 +1,141 @@
 body {
-    background-image: url('path/to/your/image.jpg'); /* Replace with the actual path to your image */
+    background-image: url('img/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    width: 100vw;
+    /* overflow: hidden; */
 }
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    overflow: hidden;
+}
+
+h1 span {
+    display: inline-block;
+    animation: wave 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); /* Delay based on index */
+}
+    
+
+/* Define the wave animation */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust height of the wave */
+    }
+}
+
+/* Assign a custom property for each letter's delay */
+h1 span:nth-child(1) { --i: 0; }
+h1 span:nth-child(2) { --i: 1; }
+h1 span:nth-child(3) { --i: 2; }
+h1 span:nth-child(4) { --i: 3; }
+h1 span:nth-child(5) { --i: 4; }
+h1 span:nth-child(6) { --i: 5; }
+h1 span:nth-child(7) { --i: 6; }
+h1 span:nth-child(8) { --i: 7; }
+h1 span:nth-child(9) { --i: 8; }
+h1 span:nth-child(10) { --i: 9; }
+h1 span:nth-child(11) { --i: 10; }
+h1 span:nth-child(12) { --i: 11; }
+h1 span:nth-child(13) { --i: 12; }
+h1 span:nth-child(14) { --i: 13; }
+h1 span:nth-child(15) { --i: 14; }
+h1 span:nth-child(16) { --i: 15; }
+h1 span:nth-child(17) { --i: 16; }
+h1 span:nth-child(18) { --i: 17; }
+h1 span:nth-child(19) { --i: 18; }
+h1 span:nth-child(20) { --i: 19; }
+h1 span:nth-child(21) { --i: 20; } /* For 'M' in "My" */
+h1 span:nth-child(22) { --i: 21; } /* For 'y' in "My" */
+h1 span:nth-child(23) { --i: 22; } /* For 'L' in "Love" */
+h1 span:nth-child(24) { --i: 23; } /* For 'o' in "Love" */
+h1 span:nth-child(25) { --i: 24; } /* For 'v' in "Love" */
+h1 span:nth-child(26) { --i: 25; } /* For 'e' in "Love" */
+
+ 
+.text {
+    font-size: 2em;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+    margin: 50px 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;    
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;  
+    width: 50vw;
+    height: auto;
+}
+
+/* Fade-out effect */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Adjust duration as needed */
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in; /* Adjust duration as needed */
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em; /* Reduce font size for headings */
+    }
+
+    .text {
+        font-size: 1.8em; /* Reduce font size for paragraph text */
+        margin: 20px; /* Adjust margins for better spacing */
+    }
+
+    .images {
+        width: 80vw; /* Adjust image size for smaller screens */
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em; /* Reduce font size for headings */
+    }
+
+    .text {
+        font-size: 1.5em; /* Reduce font size for paragraph text */
+        margin: 20px; /* Adjust margins for better spacing */
+    }
+
+    .images {
+        width: 90vw; /* Adjust image size for smaller screens */
+    }
+  }
+
