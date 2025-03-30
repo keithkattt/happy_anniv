@@ -93,7 +93,7 @@ h1 span:nth-child(26) { --i: 25; } /* For 'e' in "Love" */
     align-items: center;
     margin-top: 20px;
     gap: 20px;  
-    width: 50vw;
+    width: 20vw;
     height: auto;
     border: 2px solid rgb(229, 173, 173); /* Add a violet border */
     border-radius: 10px; /* Optional: Add rounded corners */
