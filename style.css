@@ -87,7 +87,7 @@ h1 span:nth-child(26) { --i: 25; } /* For 'e' in "Love" */
     transition: transform 0.3s ease;    
 }
 
-.images{
+.images {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +95,9 @@ h1 span:nth-child(26) { --i: 25; } /* For 'e' in "Love" */
     gap: 20px;  
     width: 50vw;
     height: auto;
+    border: 2px solid rgb(229, 173, 173); /* Add a violet border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgb(222, 122, 222); /* Add a violet shadow */
 }
 
 /* Fade-out effect */
@@ -107,6 +110,11 @@ h1 span:nth-child(26) { --i: 25; } /* For 'e' in "Love" */
 .fade-in {
     opacity: 1;
     transition: opacity 0.5s ease-in; /* Adjust duration as needed */
+}
+
+/* Ensure the image starts fully visible */
+#clickable-image {
+    opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -135,7 +143,7 @@ h1 span:nth-child(26) { --i: 25; } /* For 'e' in "Love" */
     }
 
     .images {
-        width: 90vw; /* Adjust image size for smaller screens */
+        width: 80vw; /* Adjust image size for smaller screens */
     }
   }
 
